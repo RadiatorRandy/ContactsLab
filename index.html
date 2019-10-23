@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="app">
+		<h1>Device Contacts</h1>
+        <div id="deviceready">
+			<h2>Add a Contact</h2>
+            <input id="givenName" type="text" value="Jane" onfocus="this.value='';"> First name<br />
+			<input id="familyName" type="text" value="Doe" onfocus="this.value='';"> Last name<br />
+			<input id="workNum" type="text" value="7241234567" onfocus="this.value='';">Work number<br />
+			<input id="mobileNum" type="text" value="7247654321" onfocus="this.value='';">Mobile number<br />
+			<input id="homeNum" type="text" value="3301234567" onfocus="this.value='';">Home number<br /><br />
+			<button id="givenNameBtn">Save Contact Info</button><br />
+			<hr>
+			
+			<h2>Search Contacts</h2>
+			<input id="searchPattern" type="text" value="Mom" onfocus="this.value='';"> Search string<br /><br />
+			<button id="searchBtn">Search</button><br />
+			
+            <div id="contacts-list" class="event received">
+			
+			</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
